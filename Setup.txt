@@ -37,3 +37,10 @@ git pull origin master
 git push origin master
 
 
+# Be careful, dangerous command, it will erase your repository 
+# Make sure that you run this from the right folder 
+rm -rf .git
+Now, if
+
+
+
