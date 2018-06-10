@@ -1,11 +1,15 @@
-Hi Buddy!
-Hope the 
-Just make sure you keep this Handy. 
-
-########################################
-# System: Ubuntu LTS 16.04	       #
-#	  apt (Advanced Packaging Tool)#
-########################################
+ #################################################################################################### #                                                                                                                                  #
+# Hi Buddy!
+#
+# This Cookbook contains git commands for the survival of any Software Developer. 
+# For those who seek more information about this great tool visit: https://git-scm.com/docs
+#
+#
+# System: Ubuntu LTS 16.04	       
+#	  apt (Advanced Packaging Tool)
+#
+#
+####################################################################################################
 
 Installation: Command_Line
 
@@ -23,13 +27,12 @@ Set Config:
 
 5. git config --list
 
-Cloning a Remote Repo (Git-Hub):
+Cloning a Remote Repo (GitHub):
 
 6. git clone https://github.com/robagwe/kick-off-git.git .
+# For those who are new to Ubuntu " . at the end of the command indicates the current working directory."
 
-	#For those who are new to Ubuntu " . at the end of the command indicates the current working directory."
-
-Tracking the Activites:
+Tracking The Activites:
 
 7. git status
 
@@ -37,21 +40,64 @@ Tracking the Activites:
 
 9. git diff
 
+Finally, Pushing the Changes To Github Account:
+
+10.1 git add -A
+
+10.2 git add filename
+
+11. git commit -m "message"
+
+12. git pull origin master
+#Buddy, Always make a habit of synchronizing the local repo with a remote one before pushing the changes.
+13. git push origin master
+
+#################################################################################################
+
+But, What I Feel Is, Creating A Your Own Branch Is Good Practice:
 
 
-git add -A
+14. git branch testbranch
 
-git commit -m "message"
+15. git checkout testbranch
+#To swith to the newly created local branch 
 
-git pull origin master
+16. Follow 10, 11.
+#Make changes commit to newly created branch
 
-git push origin master
+17. git push -u origin testbranch 
+#Push this newly craeted branch to remote repo
 
+18. git branch -a
+#To See all branches. "*" indicates the current working branch.
+
+19. git checkout master
+#To swith to the master local branch
+
+##################################################################################################
+
+
+Initializing A Repository From Existing Code:
+
+14. git init
+#Buddy, cd to your local repo first :)
+
+15. touch .gitignore
+#Buddy, You already know How important is this! Read CookBook_Thoery
+
+16. Follow 10, 11
+
+
+##################################################################################################
+
+
+Deleting Local Git Repo:
 
 # Be careful, dangerous command, it will erase your repository 
 # Make sure that you run this from the right folder 
-rm -rf .git
-Now, if
 
+rm -rf .git
+
+##################################################################################################
 
 
