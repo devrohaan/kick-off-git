@@ -1,0 +1,30 @@
+
+to make the conda command visible
+urce ~/.bashrc
+
+
+
+nohup anaconda-navigator >/dev/null &
+
+https://github.com/robagwe/kick-off-git.git
+
+
+sudo apt install git-all
+
+
+git --version
+
+git config --global user.name "RohanBagwe"
+
+git config --global user.email "robagwe@gmail.com"
+
+git config --list
+
+
+git clone https://github.com/robagwe/kick-off-git.git .
+
+
+
+
+
+	
