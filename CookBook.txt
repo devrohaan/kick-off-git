@@ -1,4 +1,4 @@
- #################################################################################################### #                                                                                                                                  #
+ ####################################################################################################                                                                                                                                  #
 # Hi Buddy!
 #
 # This Cookbook contains git commands for the survival of any Software Developer. 
@@ -54,25 +54,39 @@ Finally, Pushing the Changes To Github Account:
 
 #################################################################################################
 
-But, What I Feel Is, Creating A Your Own Branch Is Good Practice:
+But, What I Feel is, Creating Your Own Branch is a Good Practice while working on a production trunk: For All Would Be Devs
 
 
 14. git branch testbranch
 
 15. git checkout testbranch
-#To swith to the newly created local branch 
+#To switch to the newly created local branch 
 
 16. Follow 10, 11.
 #Make changes commit to newly created branch
 
-17. git push -u origin testbranch 
+17. git push origin -u testbranch 
 #Push this newly craeted branch to remote repo
 
 18. git branch -a
 #To See all branches. "*" indicates the current working branch.
 
+
+Now, we have to sync up our remotely pushed branch with our remote master branch.
+#Hoping your code worked well and passed all tests by your testing brother.
+
+
 19. git checkout master
 #To swith to the master local branch
+
+20. git pull origin master
+#Buddy, it should become your coding ritual by now.
+
+21. git branch --merged
+
+22. git merge testbranch
+
+23. git push origin master 
 
 ##################################################################################################
 
