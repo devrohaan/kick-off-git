@@ -23,17 +23,20 @@ Set Config:
 
 5. git config --list
 
-Cloning a Remote Repo:
+Cloning a Remote Repo (Git-Hub):
 
 6. git clone https://github.com/robagwe/kick-off-git.git .
 
-	#For those who are new to Ubuntu " . at the end of the command indicates  the current directory."
+	#For those who are new to Ubuntu " . at the end of the command indicates the current working directory."
+
+Tracking the Activites:
 
 7. git status
 
 8. git log
 
 9. git diff
+
 
 
 git add -A
