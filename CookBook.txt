@@ -1,32 +1,40 @@
+Hi Buddy!
+Hope the 
+Just make sure you keep this Handy. 
 
-to make the conda command visible
-urce ~/.bashrc
+########################################
+# System: Ubuntu LTS 16.04	       #
+#	  apt (Advanced Packaging Tool)#
+########################################
 
+Installation: Command_Line
 
+1. sudo apt install git-all
 
-nohup anaconda-navigator >/dev/null &
+Check Version:
 
-https://github.com/robagwe/kick-off-git.git
+2. git --version
 
+Set Config:
 
-sudo apt install git-all
+3. git config --global user.name "Username"
 
+4. git config --global user.email "username@email.com"
 
-git --version
+5. git config --list
 
-git config --global user.name "RohanBagwe"
+Cloning a Remote Repo:
 
-git config --global user.email "robagwe@gmail.com"
+6. git clone https://github.com/robagwe/kick-off-git.git .
 
-git config --list
+	#For those who are new to Ubuntu " . at the end of the command indicates  the current directory."
 
+7. git status
 
-git clone https://github.com/robagwe/kick-off-git.git .
+8. git log
 
+9. git diff
 
-git status
-
-git diff
 
 git add -A
 
