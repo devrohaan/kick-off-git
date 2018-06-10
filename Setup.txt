@@ -24,7 +24,16 @@ git config --list
 git clone https://github.com/robagwe/kick-off-git.git .
 
 
+git status
+
+git diff
+
+git add -A
+
+git commit -m "message"
+
+git pull origin master
+
+git push origin master
 
 
-
-	
