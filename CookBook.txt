@@ -1,0 +1,135 @@
+#####################################################################################################                                   # System: Ubuntu LTS 16.04	       
+#	  apt (Advanced Packaging Tool)
+#
+####################################################################################################
+
+Installation: Command_Line
+
+1. sudo apt install git-all
+
+Check Version:
+
+2. git --version
+
+Set Config:
+
+3. git config --global user.name "Username"
+
+4. git config --global user.email "username@email.com"
+
+5. git config --list
+
+Cloning a Remote Repo (GitHub):
+
+6. git clone https://github.com/robagwe/kick-off-git.git .
+
+# For those who are new to Ubuntu " . at the end of the command indicates the current working directory."
+
+Tracking The Activites:
+
+7. git status
+
+8. git log
+
+9. git diff
+
+Finally, Pushing the Changes To Github Account:
+
+10.1 git add -A
+
+10.2 git add filename
+
+#This command adds the modified file/files to staging.
+
+11. git commit -m "message"
+
+12. git pull origin master
+
+#Buddy, Always make a habit of synchronizing the local repo with a remote one before pushing the changes.
+
+13. git push origin master
+
+#################################################################################################
+
+14. git branch testbranch
+# create your own branch and now you are safe even if you fail. :)
+
+15. git checkout testbranch
+#To switch to the newly created local branch 
+
+16. Follow 10, 11.
+#Make changes commit to newly created branch
+
+17. git push origin -u testbranch 
+#Push this newly craeted branch to remote repo
+
+18. git branch -a
+#To See all branches. "*" indicates the current working branch.
+
+
+Now, we have to sync up our remotely pushed branch with our remote master branch.
+
+19. git checkout master
+#To swith to the master local branch
+
+20. git pull origin master
+#Buddy, it should become your coding ritual by now.
+
+21. git branch --merged
+
+22. git merge testbranch
+
+23. git push origin master 
+
+##################################################################################################
+
+
+Initializing A Repository From Existing Code:
+
+24. git init
+#Buddy, cd to your local repo first :)
+
+25. touch .gitignore
+#Buddy, You already know How important is this! If you want certian file/files to be ignored while pushing to remote repo you can make .gitignore file and mention that file extention/name 
+
+26. Follow 10, 11
+
+27. Adding an existing project to GitHub using the command line
+
+	git init
+
+	git add .
+
+	git commit -m "First commit"
+
+	git remote add origin remote repository URL
+
+	git remote -v
+
+	git push origin master
+	
+##################################################################################################
+
+
+Deleting Local Git Repo:
+
+# Be careful, dangerous command, it will erase your repository.
+# Make sure that you run this from the right folder.
+
+28. rm -rf .git
+
+
+29. Remove the history from git/github
+
+rm -rf .git
+
+-- recreate the repos from the current content only
+git init
+git add .
+git commit -m "Initial commit"
+
+-- push to the github remote repos ensuring you overwrite history
+git remote add origin git@github.com:<YOUR ACCOUNT>/<YOUR REPOS>.git
+git push -u --force origin master
+
+##################################################################################################
